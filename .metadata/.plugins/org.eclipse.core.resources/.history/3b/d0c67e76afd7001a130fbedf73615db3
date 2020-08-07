@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Job Recommendation">
+  <meta name="author" content="Your Name">
+  <title>Job Recommendation Final</title>
+</head>
+<body>
+  <header class="top-header">
+    <nav class="top-nav">
+      <a href="#">Home</a>
+      <a href="#">Contact</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+  
+  <div class="container">
+    
+  </div>
+	<footer>
+		<p>What We Do</p>
+        <p>"Help you find the best place around."</p>
+        <ul>
+            <li>
+                <p>LaiOffer office, CA</p>
+            </li>
+            <li>
+            	<p>info@laioffer.com</p>
+            </li>
+            <li>
+                <p>+1 800 123 456</p>
+            </li>
+        </ul>
+	</footer>
+</body>
+</html>

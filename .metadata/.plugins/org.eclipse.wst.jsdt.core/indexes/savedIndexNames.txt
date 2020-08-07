@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+D:\qiaoqi\web service event recommendation\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3101997918.index
+1493672193.index
+1447590771.index
+2737163656.index
+3384437943.index
+1824640231.index
+3153052681.index

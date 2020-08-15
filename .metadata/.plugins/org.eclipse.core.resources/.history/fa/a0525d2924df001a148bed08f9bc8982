@@ -4,25 +4,6 @@
   padding: 0;
 }
 
-body {
-  background: #434343;
-  color: #FFFFFF;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 0.9em;
-}
-
-ul {
-  list-style: none;
-}
-
-p {
-	margin-bottom: 0rem;
-}
-
-/**
- * top header
- */
 .top-header {
 	top: 0;
 	position: fixed;
@@ -33,38 +14,16 @@ p {
 	align-items: center;
 }
 
-#welcome-msg {
-  border-right: 1px solid #FFFFFF;
-  padding-right: 10px;
-}
-
-.avatar {
-  background: #FFFFFF;
-  border-radius: 50%;
-  color: #333C4D;
-  height: 40px;
-  margin-right: 20px;
-  padding-left: 7.5px;
-  padding-top: 3px;
-  width: 40px;
-}
-
 .nav-link{
 	color: white;
 }
 
-/**
- * main container
- */
 .container {
-  margin-top: 60px;
+  margin: 60px auto;
   max-width: 1000px;
   min-width: 600px;
 }
 
-/**
- * header picture in main container
- */
 #headpic {
   background:
     url('http://folkartcarsi.com/img/4.jpg')
@@ -90,18 +49,13 @@ p {
   color: #FBAF41;
 }
 
-/**
- * main section
- */
 .main-section {
   background: #F3BB43;
 }
 
-/**
- * aside
- */
 #item-nav {
   float: left;
+  width: 180px;
 }
 
 .nav-icon {
@@ -138,13 +92,6 @@ p {
 }
 
 /**
-* job list
-*/
-.item-category p {
-	margin-bottom: 0rem;
-}
-
-/**
  * footer section
  */
 footer {
@@ -152,18 +99,15 @@ footer {
 	font-size: 0.8em;
 	height: 200px;
 	position: relative;
-	padding-top: 30px;
-	color: white;
 }
 
 footer p {
 	text-align: center;
-	margin-bottom: 10px;
 }
 
 footer p.title {
 	font-size: 1.2em;
-	padding: 15px;	
+	padding: 15px;
 }
 
 footer ul {

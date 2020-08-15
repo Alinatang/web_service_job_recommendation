@@ -9,8 +9,6 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
@@ -29,9 +27,9 @@
       				</li>
     			</ul>
   			</div>
-  			<span id="welcome-msg"></span>
-    		<i id="avatar" class="avatar fa fa-user fa-2x"></i>
     	</nav>
+    	<span id="welcome-msg"></span>
+    	<i id="avatar" class="avatar fa fa-user fa-2x"></i>
   	</header>
   
 	<div class="container">
@@ -82,22 +80,19 @@
 	    </section>	    
 	</div>
 	<footer>
-    	<p class="title">What We Do</p>
-    	<p>"Help you find the best job around."</p>
-    	<ul>
-      		<li>
-        		<p><i class="fa fa-map-o fa-2x"></i></p>
-        		<p>LaiOffer office, CA</p>
-      		</li>
-      		<li>
-       			<p><i class="fa fa-envelope-o fa-2x"></i></p>
-        		<p>info@laioffer.com</p>
-      		</li>
-      		<li>
-        		<p><i class="fa fa-phone fa-2x"></i></p>
-        		<p>+1 800 123 456</p>
-      		</li>
-    	</ul>
-  	</footer>
+		<p>What We Do</p>
+        <p>"Help you find the best place around."</p>
+        <ul>
+            <li>
+                <p>LaiOffer office, CA</p>
+            </li>
+            <li>
+            	<p>info@laioffer.com</p>
+            </li>
+            <li>
+                <p>+1 800 123 456</p>
+            </li>
+        </ul>
+	</footer>
 </body>
 </html>

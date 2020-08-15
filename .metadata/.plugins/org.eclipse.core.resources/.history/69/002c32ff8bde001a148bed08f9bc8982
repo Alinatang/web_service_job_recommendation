@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-header {
+	position: fixed;
+	width: 100%;
+	background-color: #ff7600;
+	z-index: 1;
+}
+
+.nav-link{
+	color: white;
+}
+
+.container>header {
+  background:
+    url('http://folkartcarsi.com/img/4.jpg')
+    no-repeat 50% 50%;
+  background-size: 100%;
+  display: flex;
+    align-items: center;
+  height: 250px;
+  margin-top: 56px;
+}

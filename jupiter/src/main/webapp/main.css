@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-header {
+	top: 0;
+	position: fixed;
+	width: 100%;
+	background-color: #ff7600;
+	z-index: 1;
+	height: 60px;
+	align-items: center;
+}
+
+.nav-link{
+	color: white;
+}
+
+.container {
+  margin: 60px auto;
+  max-width: 1000px;
+  min-width: 600px;
+}
+
+#headpic {
+  background:
+    url('http://folkartcarsi.com/img/4.jpg')
+    no-repeat 50% 50%;
+  background-size: 100%;
+  display: flex;
+    align-items: center;
+  height: 250px;
+  margin-top: 56px;
+  color: white;
+}
+
+#headpic p {
+  border-left: 1px solid #FFFFFF;
+  font-weight: 400;
+  font-size: 2em;
+  line-height: 1em;
+  margin-left: 35%;
+  padding-left: 5px;
+}
+
+#headpic span {
+  color: #FBAF41;
+}
+
+.main-section {
+  background: #F3BB43;
+}

@@ -1,67 +1,95 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Job Recommendation">
-  <meta name="author" content="Qiaoqi Tang">
-  <title>Job Recommendation Final</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Job Recommendation">
+	<meta name="author" content="Qiaoqi Tang">
+	<title>Job Recommendation Final</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-  <header class="top-header">
-    <nav class="top-nav"> 
-      <a href="#">Home</a>
-      <a href="#">Contact</a>
-      <a href="#">About</a>
-    </nav>
-  </header>
+	<header class="top-header">
+    	<nav class="navbar navbar-expand-lg navbar-light"> 
+      		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    			<ul class="navbar-nav mr-auto">
+      				<li class="nav-item active">
+        				<a class="nav-link" href="#" style="color: white">Home <span class="sr-only">(current)</span></a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#" style="color: white">Contact</a>
+      				</li>
+      				<li class="nav-item">
+        				<a class="nav-link" href="#" style="color: white">About</a>
+      				</li>
+    			</ul>
+  			</div>
+    	</nav>
+    	<span id="welcome-msg"></span>
+    	<i id="avatar" class="avatar fa fa-user fa-2x"></i>
+  	</header>
   
-  <div class="container">
-    <header>
-      <p>
-        <span>Job</span>
-        <br /> Recommendation
-      </p>
-    </header>
-
-    <section class="main-section">
-
-      <aside id="item-nav">
-        <div class="nav-icon">
-          <i class="fa fa-sitemap fa-2x"></i>
-        </div>
-        <nav class="main-nav">
-          <a href="#" id="nearby-btn" class="main-nav-btn active">
-            <i class="fa fa-map-marker"></i> Nearby
-          </a>
-          <a href="#" id="fav-btn" class="main-nav-btn">
-            <i class="fa fa-heart"></i> My Favorites
-          </a>
-          <a href="#" id="recommend-btn" class="main-nav-btn">
-            <i class="fa fa-thumbs-up"></i> Recommendation
-          </a>
-        </nav>
-      </aside>
-
-      <ul id="item-list">
-        <li class="item">
-          <img alt="job image" src="https://github-jobs.s3.amazonaws.com/dV16BasrNS1hACoUvMzKDB8k?response-content-disposition=inline%3B%20filename%3D%22f470d99d-33e6-44f5-ac37-d1237f0a00d1%22%3B%20filename%2A%3DUTF-8%27%27f470d99d-33e6-44f5-ac37-d1237f0a00d1&response-content-type=image%2Fjpeg&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJENXOYUQN2IQEWRA%2F20200123%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200123T020055Z&X-Amz-Expires=300&X-Amz-SignedHeaders=host&X-Amz-Signature=03dbc3b343b9e574f887fe7ed0adefd6bc1f601cc9a52d3e2dc8c7a76dab6cb5" />
-          <div>
-            <a class="item-name" href="#">Job</a>
-            <p class="item-category">Senior Software Engineer</p>
-            <div class="stars">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-            </div>
-          </div>
-          <p class="item-address">699 Calderon Ave<br/>Mountain View<br/> CA</p>
-          <div class="fav-link">
-            <i class="fa fa-heart"></i>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
+	<div class="container">
+		<div id="headpic">
+	        <p>
+	        	<span>Job</span>
+	        	<br /> Recommendation
+	        </p>
+	    </div>
+	
+	    <section class="main-section">
+	
+	      <aside id="item-nav">
+	        <div class="nav-icon">
+	          <i class="fa fa-sitemap fa-2x"></i>
+	        </div>
+	        <nav class="main-nav">
+	          <a href="#" id="nearby-btn" class="main-nav-btn active">
+	            <i class="fa fa-map-marker"></i> Nearby
+	          </a>
+	          <a href="#" id="fav-btn" class="main-nav-btn">
+	            <i class="fa fa-heart"></i> My Favorites
+	          </a>
+	          <a href="#" id="recommend-btn" class="main-nav-btn">
+	            <i class="fa fa-thumbs-up"></i> Recommendation
+	          </a>
+	        </nav>
+	      </aside>
+	
+	      <ul id="item-list">
+	        <li class="item">
+	          <img alt="job image" src="https://seeklogo.com/images/A/apple-logo-52C416BDDD-seeklogo.com.png" />
+	          <div>
+	            <a class="item-name" href="#">Job</a>
+	            <p class="item-category">Senior Software Engineer</p>
+	            <div class="stars">
+	              <i class="fa fa-star"></i>
+	              <i class="fa fa-star"></i>
+	              <i class="fa fa-star"></i>
+	            </div>
+	          </div>
+	          <p class="item-address">699 Calderon Ave<br/>Mountain View<br/> CA</p>
+	          <div class="fav-link">
+	            <i class="fa fa-heart"></i>
+	          </div>
+	        </li>
+	      </ul>
+	    </section>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    <p>aaa</p>
+	    
+	</div>
 	<footer>
 		<p>What We Do</p>
         <p>"Help you find the best place around."</p>

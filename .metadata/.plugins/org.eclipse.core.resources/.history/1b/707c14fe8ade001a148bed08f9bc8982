@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.top-header {
+	position: fixed;
+	width: 100%;
+	background-color: #ff7600;
+	z-index: 1;
+}
+
+.nav-link{
+	color: white;
+}

@@ -24,7 +24,7 @@ public class GitHubClient {
 	private static final String URL_TEMPLATE = "https://jobs.github.com/positions.json?description=%s&lat=%s&long=%s";
 	private static final String DEFAULT_KEYWORD = "developer";
 	
-	public List<Item> search(double lat, double lon, String keyword) {
+	public JSONArray search(double lat, double lon, String keyword) {
 		if (keyword == null) {
 			keyword = DEFAULT_KEYWORD;
 		}
@@ -38,11 +38,11 @@ public class GitHubClient {
 		try {
 			CloseableHttpResponse response = httpClient.execute(new HttpGet(url));
 			if (response.getStatusLine().getStatusCode() != 200) {
-				return new ArrayList<>();
+				return new JSONArray();
 			}
 			HttpEntity entity = response.getEntity();
 			if (entity == null) {
-				return new ArrayList<>();
+				return new JSONArray();
 			}
 			BufferedReader reader = new BufferedReader(new InputStreamReader(entity.getContent()));
 			StringBuilder responseBody = new StringBuilder();
@@ -50,26 +50,29 @@ public class GitHubClient {
 			while ((line = reader.readLine()) != null) {
 				responseBody.append(line);
 			}
-			JSONArray array = new JSONArray(responseBody.toString());
-			return getItemList(array);
+			return new JSONArray(responseBody.toString());
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		return new ArrayList<>();
+		return new JSONArray();
 	}
 
-	
+	/*
 	public static void main(String[] args) {
-		GitHubClient githubClient = new GitHubClient();
-		List<Item> list = githubClient.search(37.38, -122.08, null);
-		for (Item item : list) {
-			JSONObject jsonObject = item.toJSONObject();
-			System.out.println(jsonObject);
+		GitHubClient client = new GitHubClient();
+		JSONArray jobs = client.search(37.38, -122.08, null);
+		try {
+			for (int i = 0; i < jobs.length(); ++i) {
+				JSONObject job = jobs.getJSONObject(i);
+				System.out.println(jobs.toString(2));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 	}
-	
+	*/
 	
 	private List<Item> getItemList(JSONArray array) {
 		List<Item> itemList = new ArrayList<>();

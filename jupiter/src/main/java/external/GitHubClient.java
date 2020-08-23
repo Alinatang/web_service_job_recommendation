@@ -65,7 +65,7 @@ public class GitHubClient {
 		GitHubClient githubClient = new GitHubClient();
 		List<Item> list = githubClient.search(37.38, -122.08, null);
 		for (Item item : list) {
-			JSONObject jsonObject = item.toJSONObject();
+			JSONObject jsonObject = item.toJSONObject();  
 			System.out.println(jsonObject);
 		}
 	}

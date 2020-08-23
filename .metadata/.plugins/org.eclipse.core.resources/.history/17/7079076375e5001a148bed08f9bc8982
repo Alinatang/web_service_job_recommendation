@@ -30,8 +30,4 @@
   	<servlet-name>RecommendItem</servlet-name>
   	<url-pattern>/recommendation</url-pattern>
   </servlet-mapping>
-  <servlet-mapping>
-  	<servlet-name>ItemHistory</servlet-name>
-  	<url-pattern>/history</url-pattern>
-  </servlet-mapping>
 </web-app>

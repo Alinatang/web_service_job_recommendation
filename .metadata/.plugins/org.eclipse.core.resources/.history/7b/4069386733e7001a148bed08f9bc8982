@@ -43,7 +43,7 @@ ul {
 	width: 40px;
 }
 
-.navstyle {
+.navbar {
 	flex: 1;
 }
 

@@ -43,10 +43,6 @@ ul {
 	width: 40px;
 }
 
-.navstyle {
-	flex: 1;
-}
-
 #logout-link {
 	padding-left: 10px;
 	color: white;

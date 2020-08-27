@@ -12,10 +12,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+	<script src="scripts/main.js"></script>
+	<script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
 </head>
 <body>
 	<header class="top-header">
-    	<nav class="navbar navbar-expand-lg navbar-light navstyle" style="flex: 1;"> 
+    	<nav class="navbar navbar-expand-lg navbar-light"> 
       		<div class="collapse navbar-collapse" id="navbarSupportedContent">
     			<ul class="navbar-nav mr-auto">
       				<li class="nav-item active">
@@ -29,10 +31,10 @@
       				</li>
     			</ul>
   			</div> 
+  			<span id="welcome-msg"></span>
+    		<a id="logout-link" href="logout">Logout</a>
+    		<i id="avatar" class="avatar fa fa-user fa-2x"></i>
     	</nav>
-    	<span id="welcome-msg"></span>
-    	<a id="logout-link" href="logout">Logout</a>
-    	<i id="avatar" class="avatar fa fa-user fa-2x"></i>
   	</header>
   
 	<div class="container">
@@ -124,7 +126,5 @@
       		</li>
     	</ul>
   	</footer>
-  	<script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
-  	<script src="scripts/main.js"></script>
 </body>
 </html>
